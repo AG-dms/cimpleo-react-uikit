@@ -1,0 +1,143 @@
+.container {
+  height: 60px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  position: relative;
+}
+
+.input_container > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.fullwidth {
+  flex: 1;
+}
+
+.input_container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.input_container_disabled {
+  background-color: #eeeeee;
+}
+.input_container_contain {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+}
+
+.input_container_outline {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  border-radius: 0;
+}
+
+.input_outline:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.input_container_error {
+  border-color: rgb(191, 10, 10) !important;
+}
+
+.label,
+.error_text {
+  position: absolute;
+  font-size: 13px;
+  color: #b9b9b9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.label {
+  top: -5px;
+  left: 5px;
+}
+
+.label_error {
+  color: rgb(191, 10, 10);
+}
+
+.label_large {
+  top: -10px;
+}
+
+.label_small {
+  top: 0px;
+}
+
+.input:hover {
+  border-color: black;
+}
+
+.input_container_size_large {
+  padding: 0 18px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.input_container_size_large > input {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input_container_size_medium {
+  padding: 0 10px;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.input_container_size_medium > input {
+  font-size: 14px;
+}
+.input_container_size_small {
+  box-sizing: border-box;
+  padding: 0px 10px;
+  height: 28px;
+}
+
+.input_container_size_small > input {
+  font-size: 12px;
+}
+
+.rounded {
+  border-radius: 30px;
+}
+
+.error_text {
+  position: absolute;
+  bottom: -3px;
+  left: 5px;
+  font-size: 13px;
+  color: rgb(191, 10, 10);
+}
+
+.error_text_large {
+  bottom: -12px;
+}
+
+.error_text_medium {
+  bottom: -6px;
+}
+
+.error_text_small {
+  bottom: -2px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  align-self: center;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f8f8f8;
+}
