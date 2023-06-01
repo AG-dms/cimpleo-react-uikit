@@ -32,6 +32,9 @@ export default [
       resolve(),
       commonjs(),
       typescript(),
+      terser({
+        sourcemap: true,
+      }),
       postcss({
         extensions: [".css", ".module.css"],
         modules: true,
