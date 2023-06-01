@@ -92,9 +92,9 @@ const Button: React.FC<Props> = ({
     `button_${type}_${variant}`,
     `${size}`,
     `${loader && 'disabled'}`,
-    `${disabled && 'disabled'}`,
-    `${disabled && 'disabled'}`,
+    `${rounded && 'rounded'}`,
     `${fullWidth && 'fullwidth'}`,
+    `${disabled && 'disabled'}`,
   );
 
   const spinClassName = cx('spin');
@@ -115,7 +115,7 @@ const Button: React.FC<Props> = ({
       <span className={loaderClassname}>{title}</span>
       {endIcon && !loader && endIcon}
       {loader && <div className={spinClassName} />}
-      <span className={rippleClassName} />
+      {(!loader && !disabled) && <span className={rippleClassName} />}
     </button>
   );
 };

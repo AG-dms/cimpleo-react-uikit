@@ -45,12 +45,14 @@ const meta = {
     },
     fullWidth: { control: { type: 'radio' }, options: [true, false] },
     textTransform: { control: { type: 'radio' }, options: ['uppercase', 'lowercase', 'none'] },
+    startIcon: {control: {type: null}},
+    endIcon: {control: {type: null}},
+
     disabled: { description: '***set button disabled***', control: { type: 'boolean' } },
     loader: { control: { type: 'boolean' } },
     onClick: {
-      action: {
-        handles: ['mouseover', 'click .btn'],
-      },
+      argTypesRegex: '^on.*',
+      
     },
   },
 } satisfies Meta<typeof Button>;
@@ -59,10 +61,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Playground: Story = {
-  render: args => <Button {...args} disabled={false} />,
+  render: args => <Button {...args} />,
   args: {
     variant: 'primary',
     title: 'button',
+    disabled: true
   },
 };
 

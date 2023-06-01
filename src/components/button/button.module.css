@@ -130,12 +130,6 @@
   background-color: #9a1c1c;
 }
 
-.disabled {
-  cursor: text;
-  background-color: #d4d4d4 !important;
-  color: #8f8f8f !important;
-}
-
 .rounded {
   border-radius: 30px;
 }
@@ -169,7 +163,7 @@
   border: solid 5px #b6b6b6;
   border-bottom-color: #6e6e6e;
   border-radius: 50%;
-  content: '';
+  content: "";
   height: 10px;
   transform: translate3d(-50%, -50%, 0);
   width: 10px;
@@ -181,4 +175,14 @@
 
 .loader {
   visibility: hidden;
+}
+
+.disabled {
+  cursor: pointer;
+  background-color: #d4d4d4 !important;
+  color: #8f8f8f !important;
+}
+.button:disabled {
+  background-color: #d4d4d4 !important;
+  color: #8f8f8f !important;
 }
